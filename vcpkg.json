@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "lansync",
+  "version-string": "0.1.0",
+  "description": "Secure LAN file synchronization",
+  "dependencies": [
+    "boost-asio",
+    "boost-system",
+    "openssl",
+    "sqlite3",
+    "spdlog",
+    "nlohmann-json",
+    "gtest"
+  ],
+  "features": {
+    "desktop": {
+      "description": "Qt 6 / QML desktop application",
+      "dependencies": [
+        { "name": "qtbase", "default-features": false, "features": ["gui", "widgets", "opengl"] },
+        "qtdeclarative"
+      ]
+    }
+  },
+  "default-features": ["desktop"]
+}

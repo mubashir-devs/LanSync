@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=LanSync
+Comment=Synchronize folders between computers on your local network
+Exec=lansync
+Icon=folder-sync
+Terminal=false
+Categories=Network;FileTransfer;Utility;
